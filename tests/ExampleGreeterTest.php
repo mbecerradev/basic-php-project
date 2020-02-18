@@ -30,7 +30,7 @@ final class ExampleGreeterTest extends TestCase
 
         $this->whenItGreets();
 
-        $this->thenItShouldSayCodelyTv();
+        $this->thenItShouldSayHelloWorld();
     }
 
     private function givenAGreeter()
@@ -43,7 +43,7 @@ final class ExampleGreeterTest extends TestCase
         $this->greeting = $this->greeter->greet();
     }
 
-    private function thenItShouldSayCodelyTv()
+    private function thenItShouldSayHelloWorld()
     {
         $this->assertEquals("Hello world, Name!", $this->greeting);
     }
